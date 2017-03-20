@@ -1,8 +1,9 @@
-% Firebird
+% Inspector Gadget
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
 \include "AGuitarOne.ly"
 \include "BGuitarOne.ly"
+\include "CGuitarOne.ly"
 \include "AGuitarTwo.ly"
 \include "BGuitarTwo.ly"
 \include "AGuitarThree.ly"
@@ -29,6 +30,7 @@
    \time 4/4
    \AGuitarOne
    \BGuitarOne
+   \CGuitarOne
   }
   \new Staff \with {
    instrumentName = \markup {\column {"Guitars 2,3" \line {\teeny "Will Ray"} \line {\teeny "Jerry Donahue"}}}
