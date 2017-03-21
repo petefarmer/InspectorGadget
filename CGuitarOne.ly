@@ -10,24 +10,15 @@ CGuitarOne = {
        e''8 \staccato \times 2/3 {a'16  \glissando e'' e''} 
        e''16 e'' e''8 \staccato 
 
-      % measure 24f,27u
-%       a,,,8. \ottava #1 dis''16 \( \glissando e a b8 \grace b8 (c4) (b) \)
  a,8. \ottava #+1 dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b'') \bendOff
        
-      % measure 25f,28u
- %      gis16 \( a8 \staccato gis16 a dis, e8 f \staccato f16 e \) r
- %       dis,, (e8)
  gis''16 a''8 \staccato gis''16 a'' dis'' e''8 \staccato  f'' \staccato f''16 e''  r dis' (e'8)
 
-      % measure 26f,29u
- %      a,8. \autoBeamOn dis''16 \( \glissando e a b8 \grace b8 (c4) (b8) \)  gis
- a8. dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b''8) gis'8 \bendOff
+ a8. dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b''8) gis''8 \bendOff
        
-
-      % measure 27f,30u
-       a''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
-       b''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
-       b''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
-       b''16 b'' b''8 \staccato \)
+ a''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
+ b''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
+ b''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
+ b''16 b'' b''8 \staccato 
  \ottava #0
 }

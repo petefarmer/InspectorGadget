@@ -6,8 +6,10 @@
 \include "CGuitarOne.ly"
 \include "AGuitarTwo.ly"
 \include "BGuitarTwo.ly"
+\include "CGuitarTwo.ly"
 \include "AGuitarThree.ly"
 \include "BGuitarThree.ly"
+\include "CGuitarThree.ly"
 
 \book {
  \header {
@@ -43,10 +45,12 @@
      \stemDown
      \AGuitarTwo
      \BGuitarTwo
+     \CGuitarTwo
     }\\{
      \stemUp
      \AGuitarThree
      \BGuitarThree
+     \CGuitarThree
     }
    >>
   }
