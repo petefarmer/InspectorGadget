@@ -2,14 +2,19 @@
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
 \include "AGuitarOne.ly"
+\include "AAGuitarOne.ly"
 \include "BGuitarOne.ly"
 \include "CGuitarOne.ly"
 \include "AGuitarTwo.ly"
+\include "AAGuitarTwo.ly"
 \include "BGuitarTwo.ly"
 \include "CGuitarTwo.ly"
 \include "AGuitarThree.ly"
+\include "AAGuitarThree.ly"
 \include "BGuitarThree.ly"
 \include "CGuitarThree.ly"
+\include "SoloOne.ly"
+\include "SoloTwo.ly"
 
 \book {
  \header {
@@ -32,7 +37,10 @@
    \time 4/4
    \AGuitarOne
    \BGuitarOne
-   \CGuitarOne
+   \AAGuitarOne
+%   \CGuitarOne
+   \SoloOne
+   \SoloTwo
   }
   \new Staff \with {
    instrumentName = \markup {\column {"Guitars 2,3" \line {\teeny "Will Ray"} \line {\teeny "Jerry Donahue"}}}
@@ -45,12 +53,14 @@
      \stemDown
      \AGuitarTwo
      \BGuitarTwo
-     \CGuitarTwo
+     \AAGuitarTwo
+%     \CGuitarTwo
     }\\{
      \stemUp
      \AGuitarThree
      \BGuitarThree
-     \CGuitarThree
+     \AAGuitarThree
+%     \CGuitarThree
     }
    >>
   }

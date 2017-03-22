@@ -142,7 +142,7 @@ JJNotes = \relative c''' {
 %      \grace { \times 2/3 {g32 ( [ a g ] } } e8 ) \times 2/3 { fis16 (g fis) } 
       g16  e  \times 2/3 { fis16 (g fis) } 
 
-      e d c bes \afterGrace a'4-\prall ( \glissando e' ) \)
+      e d c bes \afterGrace a'4-\prall ( \glissando \hideNotes e' \unHideNotes ) \)
 
       %measure 36
       \times 4/6 {e,16 e' g b ( g e} 
