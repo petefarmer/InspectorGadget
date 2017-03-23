@@ -3,18 +3,26 @@
 \include "definitions_No-Tab.ly"
 \include "AGuitarOne.ly"
 \include "AAGuitarOne.ly"
+\include "AAAGuitarOne.ly"
 \include "BGuitarOne.ly"
 \include "CGuitarOne.ly"
 \include "AGuitarTwo.ly"
 \include "AAGuitarTwo.ly"
+\include "AAAGuitarTwo.ly"
 \include "BGuitarTwo.ly"
 \include "CGuitarTwo.ly"
 \include "AGuitarThree.ly"
 \include "AAGuitarThree.ly"
+\include "AAAGuitarThree.ly"
 \include "BGuitarThree.ly"
 \include "CGuitarThree.ly"
 \include "SoloOne.ly"
 \include "SoloTwo.ly"
+\include "SoloThree.ly"
+\include "SoloFour.ly"
+\include "FourMeasureRest.ly"
+\include "FourMeasureSpace.ly"
+\include "ThreeMeasureSpace.ly"
 
 \book {
  \header {
@@ -38,9 +46,14 @@
    \AGuitarOne
    \BGuitarOne
    \AAGuitarOne
-%   \CGuitarOne
+   \CGuitarOne
+   \AAAGuitarOne
    \SoloOne
-   \SoloTwo
+   \ThreeMeasureSpace
+   \BGuitarOne
+   \FourMeasureSpace
+   \SoloFour
+   \CGuitarOne
   }
   \new Staff \with {
    instrumentName = \markup {\column {"Guitars 2,3" \line {\teeny "Will Ray"} \line {\teeny "Jerry Donahue"}}}
@@ -54,13 +67,27 @@
      \AGuitarTwo
      \BGuitarTwo
      \AAGuitarTwo
-%     \CGuitarTwo
+     \CGuitarTwo
+     \AAAGuitarTwo
+     \FourMeasureSpace
+     \SoloTwo
+     \BGuitarTwo
+     \FourMeasureSpace
+     \FourMeasureSpace
+     \CGuitarTwo
     }\\{
      \stemUp
      \AGuitarThree
      \BGuitarThree
      \AAGuitarThree
-%     \CGuitarThree
+     \CGuitarThree
+     \AAAGuitarThree
+     \FourMeasureSpace
+     \FourMeasureSpace
+     \BGuitarThree
+     \SoloThree
+     \FourMeasureRest
+     \CGuitarThree
     }
    >>
   }
