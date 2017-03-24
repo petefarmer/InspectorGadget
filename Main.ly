@@ -4,22 +4,32 @@
 \include "AGuitarOne.ly"
 \include "AAGuitarOne.ly"
 \include "AAAGuitarOne.ly"
+\include "AAAAGuitarOne.ly"
 \include "BGuitarOne.ly"
+\include "BBGuitarOne.ly"
 \include "CGuitarOne.ly"
+\include "CCGuitarOne.ly"
 \include "AGuitarTwo.ly"
 \include "AAGuitarTwo.ly"
 \include "AAAGuitarTwo.ly"
+\include "AAAAGuitarTwo.ly"
 \include "BGuitarTwo.ly"
+\include "BBGuitarTwo.ly"
 \include "CGuitarTwo.ly"
+\include "CCGuitarTwo.ly"
 \include "AGuitarThree.ly"
 \include "AAGuitarThree.ly"
 \include "AAAGuitarThree.ly"
+\include "AAAAGuitarThree.ly"
 \include "BGuitarThree.ly"
+\include "BBGuitarThree.ly"
 \include "CGuitarThree.ly"
+\include "CCGuitarThree.ly"
 \include "SoloOne.ly"
 \include "SoloTwo.ly"
 \include "SoloThree.ly"
 \include "SoloFour.ly"
+% helper files
 \include "FourMeasureRest.ly"
 \include "FourMeasureSpace.ly"
 \include "ThreeMeasureSpace.ly"
@@ -50,10 +60,11 @@
    \AAAGuitarOne
    \SoloOne
    \ThreeMeasureSpace
-   \BGuitarOne
+   \BBGuitarOne
    \FourMeasureSpace
    \SoloFour
-   \CGuitarOne
+   \CCGuitarOne
+   \AAAAGuitarOne
   }
   \new Staff \with {
    instrumentName = \markup {\column {"Guitars 2,3" \line {\teeny "Will Ray"} \line {\teeny "Jerry Donahue"}}}
@@ -71,10 +82,11 @@
      \AAAGuitarTwo
      \FourMeasureSpace
      \SoloTwo
-     \BGuitarTwo
+     \BBGuitarTwo
      \FourMeasureSpace
      \FourMeasureSpace
-     \CGuitarTwo
+     \CCGuitarTwo
+     \AAAAGuitarTwo
     }\\{
      \stemUp
      \AGuitarThree
@@ -84,10 +96,11 @@
      \AAAGuitarThree
      \FourMeasureSpace
      \FourMeasureSpace
-     \BGuitarThree
+     \BBGuitarThree
      \SoloThree
      \FourMeasureRest
-     \CGuitarThree
+     \CCGuitarThree
+     \AAAGuitarThree
     }
    >>
   }
@@ -105,6 +118,7 @@
    \Staff
 \override Glissando #'minimum-length = #4
 \override Glissando #'springs-and-rods = #ly:spanner::set-spacing-rods 
+\RemoveEmptyStaves 
   }
  }
 \midi {}

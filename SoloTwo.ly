@@ -26,6 +26,7 @@ SoloTwo = {
    s2 \afterGrace ais2 \glissando  {\hideNotes g'8} \unHideNotes 
 
    s1
+   \stemNeutral \autoBeamOn
  }
  >>
 }
