@@ -1,26 +1,19 @@
 % BassNotes = \transpose c c, {  % Bass 8va by convention - drop for midi
-BassNotes = {
+Bass = {
  \clef "bass"
  \Rests
 % Solo 1 begin
- \time 4/4
- \grace {s8}
- \repeat percent 3 {
  e,8 fis g b  c g c e
- }
-% e,8 fis g b  c g c e
-% e,8 fis g b  c g c e
+ e,8 fis g b  c g c e
+ e,8 fis g b  c g c e
  e,8 fis g b  ais a g b
 % Solo 1 end
 % Solo 2 begin
 % a' fis, g b c g c e
 %measure 38,39,40f
- \repeat percent 3 {
  e,8 fis g b c g c e
- }
-%measure 39
-% e,8 fis g b c g c e
-% e,8 fis g b c g c e
+ e,8 fis g b c g c e
+ e,8 fis g b c g c e
  e,8 fis g b ais a g gis 
 % Solo 2 end
 % Tema 1 - begin
@@ -70,14 +63,15 @@ BassNotes = {
    e, g b b ais16 g ais ais a g e8
   }
   {
-   e8 fis g b c g c e
+%   e8 fis g b c g c e
+   e,8 g b dis e r 
   }
  }
- \time 3/4 e,8 g b dis e r \time 4/4
+% \time 3/4 e,8 g b dis e r \time 4/4
+% e,8 g b dis e r 
 % Intro - end
 % Coda
-  e,1
-  e1
-  e4 r e8 r4. 
+  e,1 ~
+  e,1 ~
+  e,2 r4  e8 e,8
 }
-

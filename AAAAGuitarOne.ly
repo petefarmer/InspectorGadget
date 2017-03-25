@@ -6,7 +6,7 @@ AAAAGuitarOne = {
  }
  \alternative {
   {e,16-> fis, g, a, b, g, b,8 \staccato  bes,16->  g, bes, bes,-> (a,)  g, e,8 \staccato}
-  {\time 3/4 g,16  fis, g, a, bes, b, d dis e8  r}
+  {\time 3/4 g,16  fis, g, a, bes, b, d dis e8  e,}
 
  }
 }

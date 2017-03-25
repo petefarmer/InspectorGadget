@@ -1,4 +1,3 @@
-
 PianoUpper = \relative c {
  \clef "treble"
  \time 4/4
@@ -6,21 +5,15 @@ PianoUpper = \relative c {
 % RESTS
 \Rests
 % Solo 1 begin
- \time 4/4
- \grace {s8}
- \repeat percent 3 {
  <d' e g>4 <d e g>8. <c e g>16 ~ <c e g>2
- }
-% <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
-% <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
  <d e g>4 <d e g>8. <e a cis e>16 ~ <e a cis e>2
 % Solo 1 end
 % Solo 2 begin
- \repeat percent 3 {
  <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
- }
-% <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
-% <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
  <d e g>4 <d e g>8. r16 r2
 % Solo 2 end
 % Tema 1 - begin
@@ -76,15 +69,16 @@ PianoUpper = \relative c {
  r4 <e' a>8 r <e bes'>8. <e b'> r8
   }
   {
- <d, e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ <d, e g>4 <d e g>8. <c e g>16 ~ <c e g>8 r8
   }
  }
- \time 3/4 r2 r4 \time 4/4
+% \time 3/4 r2 r4 \time 4/4
+% \time 3/4 r2 r4 
 % Intro - end
 % Coda
    <d e g>1 ~
    <d e g>1
-   r2 <d e g>8 r4.
+   r2 r4. <d e g>8 
 }
 
 PianoLower = \relative c {
@@ -93,22 +87,16 @@ PianoLower = \relative c {
 % RESTS
 \Rests
 % Solo 1 begin
- \time 4/4
- \grace {s8}
- \repeat percent 3 {
  <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
- }
-% <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
-% <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
  <e b'>4 <e b'>8. <b  b'>16 ~ <b b'>2
 % Solo 1 end
 % Solo 2 begin
 % measure 38,39,40
- \repeat percent 3 {
  <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
- }
-% <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
-% <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
  <e b'>4 <e b'>8. r16 r2
 % Solo 2 end
 % Tema 1 - begin
@@ -167,14 +155,15 @@ PianoLower = \relative c {
   r1
   }
   {
- <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>8 r8
   }
  }
- \time 3/4 r2 r4 \time 4/4
+% \time 3/4 r2 r4 \time 4/4
+% \time 3/4 r2 r4 
 % Intro - end
 % Coda
    <e b'>1 ~
    <e b'>1
-   r2 <e b'>8 r4.
+   r2 r4. <e b'>8 
 }
 

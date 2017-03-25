@@ -29,10 +29,18 @@
 \include "SoloTwo.ly"
 \include "SoloThree.ly"
 \include "SoloFour.ly"
+\include "CodaGuitarOne.ly"
+\include "CodaGuitarTwo.ly"
+\include "CodaGuitarThree.ly"
 % helper files
 \include "FourMeasureRest.ly"
 \include "FourMeasureSpace.ly"
 \include "ThreeMeasureSpace.ly"
+\include "Rests.ly"
+
+\include "Piano.ly"
+\include "Bass.ly"
+\include "Drums.ly"
 
 \book {
  \header {
@@ -65,6 +73,7 @@
    \SoloFour
    \CCGuitarOne
    \AAAAGuitarOne
+   \CodaGuitarOne
   }
   \new Staff \with {
    instrumentName = \markup {\column {"Guitars 2,3" \line {\teeny "Will Ray"} \line {\teeny "Jerry Donahue"}}}
@@ -87,6 +96,7 @@
      \FourMeasureSpace
      \CCGuitarTwo
      \AAAAGuitarTwo
+     \CodaGuitarTwo
     }\\{
      \stemUp
      \AGuitarThree
@@ -101,9 +111,28 @@
      \FourMeasureRest
      \CCGuitarThree
      \AAAGuitarThree
+     \CodaGuitarThree
     }
    >>
   }
+  \new Staff {
+   \set Staff.instrumentName = #"Bass"
+   \Bass
+  }
+
+  \new PianoStaff {
+    \set PianoStaff.instrumentName = #"Piano"
+   <<
+    \time 4/4
+    \new Staff = "upper" \PianoUpper
+    \new Staff = "lower" \PianoLower
+   >>
+  }
+  \new DrumStaff {
+   \set Staff.instrumentName = #"Drums"
+   \Drums
+  }
+
  >> % StaffGroup
  \layout {
   \context {
