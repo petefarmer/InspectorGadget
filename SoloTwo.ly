@@ -6,10 +6,12 @@ SoloTwo = {
   \slurDown \tuplet 3/2 { b16 (ais) (a) (} g) (a)   (g16) d dis e \afterGrace d'2 \glissando {\hideNotes b'8} \unHideNotes 
     \slurNeutral
 
-  \grace b16 d'16 e'16 d'16 b16   d'8 a16 (ais16)  (a16) g16 \glissando fis16  a16 \glissando \autoBeamOff g8 \stemDown \bendOn ais8
-  
+%  \grace b16 d'16 e'16 d'16 b16   d'8 a16 (ais16)  (a16) g16 \glissando fis16  a16 \glissando \autoBeamOff g8 \stemDown \bendOn ais8
+  \slurDown
+  \tieDown 
+  \tuplet 3/2 {b16 d'16 ~ d'}  \tuplet 3/2 {e'16 d'16 ~ d'}  \tuplet 3/2 {b16 d'16 ~ d'}  \bendOn a8 (ais16)   (a16) \bendOff \tuplet 3/2 {g16  \glissando fis16 ~ fis}  \autoBeamOff \tuplet 3/2 {a16 \glissando [g ~ g]} \stemDown \slurUp \bendOn ais8
   (b8) 
-
+\tieUp
 \stemUp
   b16
       \tuplet 3/2 {d'16 [g] \stemDown b} 
