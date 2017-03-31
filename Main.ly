@@ -115,10 +115,14 @@
     }
    >>
   }
+  
+  
   \new Staff {
    \set Staff.instrumentName = #"Bass"
+   \key e \minor
    \Bass
   }
+  
 
   \new PianoStaff {
     \set PianoStaff.instrumentName = #"Piano"
@@ -128,11 +132,14 @@
     \new Staff = "lower" \PianoLower
    >>
   }
+  
+  
   \new DrumStaff {
    \set Staff.instrumentName = #"Drums"
    \Drums
   }
-
+  
+  
  >> % StaffGroup
  \layout {
   \context {

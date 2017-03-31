@@ -62,10 +62,11 @@ PianoUpper = \relative c {
  \repeat volta 2 {
  <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
  <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+  <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
+ 
  }
  \alternative {
   { 
- <d e g>4 <d e g>8. <c e g>16 ~ <c e g>2
  r4 <e' a>8 r <e bes'>8. <e b'> r8
   }
   {
@@ -148,10 +149,11 @@ PianoLower = \relative c {
  \repeat volta 2 {
  <e' b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
  <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+ <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
+
  }
  \alternative {
   { 
- <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>2
   r1
   }
   {

@@ -38,9 +38,10 @@ Rests = {
       \repeat volta 2 {
        r1
        r
+       r
       }
       \alternative {
-       { r1 r }
+       { r1}
        {\time 3/4 r4 r2 }
       }
      } 

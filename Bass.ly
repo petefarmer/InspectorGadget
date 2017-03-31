@@ -56,10 +56,11 @@ Bass = {
  \repeat volta 2 {
   e,8 fis g b c g c e
   e,8 fis g b c g c e
+  e,8 fis g b c g c e
+
  }
  \alternative {
   { 
-   e,8 fis g b c g c e
    e, g b b ais16 g ais ais a g e8
   }
   {

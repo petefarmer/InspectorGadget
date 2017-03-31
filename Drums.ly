@@ -58,14 +58,14 @@ Drums = {
       \repeat volta 2 {
        hho8 hhc hho hhc  hho hhc hho hhc
        hho8 hhc hho hhc  hho hhc hho hhc
+       hho8 hhc hho hhc  hho hhc hho hhc
       }
       \alternative {
        { 
          hho8 hhc hho hhc  hho hhc hho hhc
-         hho8 hhc hho hhc  hho hhc hho hhc 
        }
        { 
-          hho8 hhc hho hhc hho r 
+         \time 3/4 hho8 hhc hho hhc hho r 
        }
       }
      } 
@@ -126,15 +126,15 @@ Drums = {
  \repeat volta 2 {
 << { hhc hhc hhc hhc hhc hhc hhc hhc } \\ { s8 sn s sn s sn s16 sn s8 } \\ {bd8 s bd s bd s bd s } >>
 << { hhc hhc hhc hhc hhc hhc hhc hhc } \\ { s8 sn s sn s sn s16 sn s8 } \\ {bd8 s bd s bd s bd s } >>
+<< { hhc hhc hhc hhc hhc hhc hhc hhc } \\ { s8 sn s sn s sn s16 sn s8 } \\ {bd8 s bd s bd s bd s } >>
  }
  \alternative {
   { 
-<< { hhc hhc hhc hhc hhc hhc hhc hhc } \\ { s8 sn s sn s sn s16 sn s8 } \\ {bd8 s bd s bd s bd s } >>
-<< { hhc hhc hhc hhc hhc hhc hhc hhc } \\ { s8 sn s sn s sn s16 sn s8 } \\ {bd8 s bd s bd s bd s } >>
+<< { hhc hhc hhc hhc hhc hhc hhc hhc} \\ { s8 sn s sn s sn s sn } \\ {bd8 s bd s bd s bd s } >>
   }
   {
  % time 3/4
-   << { s2 s4 } \\ { sn16 sn sn sn  sn sn sn sn  sn8 } \\ { s2 s8 bd } >>
+   << { s2 s4 } \\ { sn16 sn sn sn  sn sn sn sn  sn8 sn } \\ { s2 s8 bd } >>
   }
  }
 % Intro - end
@@ -142,7 +142,7 @@ Drums = {
 %<< { cymc2 cymc } \\ { s2 cymr } \\ { sn2 s } >>
 %<< { cymc2 cymc } \\ { s2 cymr } \\ { sn2 s } >>
 %<< { cymc2 cymc } \\ { s2 cymr } \\ { sn2 s } >>
-r1 r r2 r4  sn8 bd8
+r1 r  r2 r4  sn8 bd8
 
   }
 }
