@@ -1,7 +1,9 @@
 % Inspector Gadget
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
+\include "tabber.ly"
 \include "AGuitarOne.ly"
+\include "AGuitarOneTab.ly"
 \include "AAGuitarOne.ly"
 \include "AAAGuitarOne.ly"
 \include "AAAAGuitarOne.ly"
@@ -26,7 +28,9 @@
 \include "CGuitarThree.ly"
 \include "CCGuitarThree.ly"
 \include "SoloOne.ly"
+\include "SoloOneTab.ly"
 \include "SoloTwo.ly"
+\include "SoloTwoTab.ly"
 \include "SoloThree.ly"
 \include "SoloFour.ly"
 \include "CodaGuitarOne.ly"
@@ -159,4 +163,56 @@
  }
 \midi {}
 } % score
+
+\pageBreak
+
+\markup {\teeny "Guitar 1 - section A"}
+\score {
+
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \AGuitarOne
+  }
+  \new TabStaff {
+   \AGuitarOneTab
+  }
+ >>
+
+  \layout {
+     #(layout-set-staff-size 14)
+  }
+}
+
+\markup {\teeny "Guitar 1 - Solo 1"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \SoloOne
+  }
+  \new TabStaff {
+   \SoloOneTab
+  }
+
+ >>
+}
+
+\markup {\teeny "Guitar 1 - Solo 1"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \SoloTwo
+  }
+  \new TabStaff {
+   \SoloTwoTab
+  }
+
+ >>
+}
+
 } % book
