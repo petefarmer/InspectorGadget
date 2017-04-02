@@ -8,31 +8,43 @@
 \include "AAAGuitarOne.ly"
 \include "AAAAGuitarOne.ly"
 \include "BGuitarOne.ly"
+\include "BGuitarOneTab.ly"
 \include "BBGuitarOne.ly"
 \include "CGuitarOne.ly"
+\include "CGuitarOneTab.ly"
 \include "CCGuitarOne.ly"
 \include "AGuitarTwo.ly"
+\include "AGuitarTwoTab.ly"
 \include "AAGuitarTwo.ly"
 \include "AAAGuitarTwo.ly"
 \include "AAAAGuitarTwo.ly"
 \include "BGuitarTwo.ly"
+\include "BGuitarTwoTab.ly"
 \include "BBGuitarTwo.ly"
 \include "CGuitarTwo.ly"
+\include "CGuitarTwoTab.ly"
 \include "CCGuitarTwo.ly"
 \include "AGuitarThree.ly"
+\include "AGuitarThreeTab.ly"
 \include "AAGuitarThree.ly"
 \include "AAAGuitarThree.ly"
 \include "AAAAGuitarThree.ly"
 \include "BGuitarThree.ly"
+\include "BGuitarThreeTab.ly"
 \include "BBGuitarThree.ly"
 \include "CGuitarThree.ly"
+\include "CGuitarThreeTab.ly"
 \include "CCGuitarThree.ly"
 \include "SoloOne.ly"
 \include "SoloOneTab.ly"
 \include "SoloTwo.ly"
 \include "SoloTwoTab.ly"
 \include "SoloThree.ly"
+\include "SoloThreeTab.ly"
 \include "SoloFour.ly"
+\include "SoloFourTab.ly"
+\include "SoloFourExtention.ly"
+\include "SoloFourExtentionTab.ly"
 \include "CodaGuitarOne.ly"
 \include "CodaGuitarTwo.ly"
 \include "CodaGuitarThree.ly"
@@ -54,6 +66,7 @@
   composer = "John Jorgenson"
   copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
  }
+
 
 \score {
 %\unfoldRepeats
@@ -166,9 +179,9 @@
 
 \pageBreak
 
-\markup {\teeny "Guitar 1 - section A"}
-\score {
 
+\markup {"Guitar 1 - section A"}
+\score {
  \new StaffGroup <<
   \new Staff {
    \clef "treble_8"
@@ -179,13 +192,64 @@
    \AGuitarOneTab
   }
  >>
-
   \layout {
-     #(layout-set-staff-size 14)
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
   }
 }
 
-\markup {\teeny "Guitar 1 - Solo 1"}
+\markup {"Guitar 1 - section B"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \BGuitarOne
+  }
+  \new TabStaff {
+   \BGuitarOneTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 1 - section C"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \CGuitarOne
+  }
+  \new TabStaff {
+   \CGuitarOneTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 1 - Solo 1"}
 \score {
  \new StaffGroup <<
   \new Staff {
@@ -198,9 +262,114 @@
   }
 
  >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
 }
 
-\markup {\teeny "Guitar 1 - Solo 1"}
+\markup {"Guitar 1 - Solo 4"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \SoloFour
+   \SoloFourExtention
+  }
+  \new TabStaff {
+   \SoloFourTab
+   \SoloFourExtentionTab
+  }
+
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+
+\markup {"Guitar 2 - section A"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \AGuitarTwo
+  }
+  \new TabStaff {
+   \AGuitarTwoTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 2 - section B"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \BGuitarTwo
+  }
+  \new TabStaff {
+   \BGuitarTwoTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 2 - section C"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \CGuitarTwo
+  }
+  \new TabStaff {
+   \CGuitarTwoTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 2 - Solo 2"}
 \score {
  \new StaffGroup <<
   \new Staff {
@@ -213,6 +382,110 @@
   }
 
  >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+
+\markup {"Guitar 3 - section A"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \AGuitarThree
+  }
+  \new TabStaff {
+   \AGuitarThreeTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 3 - section B"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \BGuitarThree
+  }
+  \new TabStaff {
+   \BGuitarThreeTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+\markup {"Guitar 3 - section C"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \CGuitarThree
+  }
+  \new TabStaff {
+   \CGuitarThreeTab
+  }
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
+}
+
+
+\markup {"Guitar 3 - Solo 3"}
+\score {
+ \new StaffGroup <<
+  \new Staff {
+   \clef "treble_8"
+   \key e \minor
+   \SoloThree
+  }
+  \new TabStaff {
+   \SoloThreeTab
+  }
+
+ >>
+  \layout {
+%     #(layout-set-staff-size 14)
+    indent = 0\cm
+    \override StaffGroup.SystemStartBracket #'transparent = ##t
+    \context {
+     \TabStaff
+      \remove Clef_engraver
+    }
+  }
 }
 
 } % book
