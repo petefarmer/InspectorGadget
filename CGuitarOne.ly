@@ -12,9 +12,9 @@ CGuitarOne = {
 
  a,8. \ottava #+1 dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b'') \bendOff
        
- gis''16 a''8 \staccato gis''16 a'' dis'' e''8 \staccato  f'' \staccato f''16 e''  r dis' (e'8)
+ gis''16 a''8 \staccato gis''16 a'' dis'' e''8 \staccato  f'' \staccato f''16 e'' \ottava #0  r dis (e8)
 
- a8. dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b''8) gis''8 \bendOff
+ a,8. \ottava #+1 dis''16  \glissando e'' a'' b''8 \bendOn \bendGrace b''8 (c'''4) (b''8) gis''8 \bendOff
        
  a''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 
  b''8 \staccato \times 2/3 {a''16  \glissando b'' b''} 

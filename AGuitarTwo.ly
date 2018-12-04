@@ -1,6 +1,6 @@
 AGuitarTwo = {
  \repeat volta 2 {
-  b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
+  b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g'  (e') d' c'8  
   b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
   b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
  }

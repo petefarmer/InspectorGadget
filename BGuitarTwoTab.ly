@@ -1,9 +1,9 @@
 BGuitarTwoTab = {
- a,8-. \hideNotes \grace d \glissando \unHideNotes fis  a \hideNotes \grace fis \glissando \unHideNotes a  cis' \hideNotes \grace ais \glissando \unHideNotes cis'  e' \hideNotes \grace cis' \glissando \unHideNotes e'
+ a,8-. \hideNotes \grace d \glissando \unHideNotes fis\5  a\4 \hideNotes \grace fis \glissando \unHideNotes a\4  cis'\3 \hideNotes \grace ais \glissando \unHideNotes cis'\3  e'\2 \hideNotes \grace cis' \glissando \unHideNotes e'\3
 
- g'4  a'16 g' e'  d''8 cis'' b' cis''16 b'8
+ g'4\2  a'16\2 g'\2 e'\3  d''8 cis'' b' cis''16 b'8
 
- \afterGrace a' \glissando {\hideNotes e} \grace d \glissando \unHideNotes fis a \hideNotes \grace fis \glissando \unHideNotes a cis' \hideNotes \grace ais \glissando \unHideNotes cis' e' \hideNotes \grace cis' \glissando \unHideNotes e' 
+ \afterGrace a'\2 \glissando {\hideNotes e} \grace d \glissando \unHideNotes fis a \hideNotes \grace fis \glissando \unHideNotes a cis' \hideNotes \grace ais \glissando \unHideNotes cis' e' \hideNotes \grace cis' \glissando \unHideNotes e' 
 
  g'4  a'16 g' e'  d''8 cis'' b' cis''16 b'8
 

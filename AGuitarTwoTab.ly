@@ -1,12 +1,11 @@
 AGuitarTwoTab = {
  \repeat volta 2 {
-  b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
-  b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
-  b'16 ais' b'8  g'16  fis' g'8   g'16  e' g' g' \glissando e' d' c'8  
+  b'16\2 ais'\2 b'8\2  g'16\3  fis'\3 g'8\3   g'16\3  e'\3 g'\3 g'\3 (e'\3) d'\4 c'8\4  
+  b'16\2 ais'\2 b'8\2  g'16\3  fis'\3 g'8\3   g'16\3  e'\3 g'\3 g'\3 (e'\3) d'\4 c'8\4  
+  b'16\2 ais'\2 b'8\2  g'16\3  fis'\3 g'8\3   g'16\3  e'\3 g'\3 g'\3 (e'\3) d'\4 c'8\4  
  }
  \alternative {
-  {e16 fis g a b g b8   bes16  g bes bes (a) g e8}
-%  {e'8  e e e'  e fis g gis}
-  {e8 e e e  \tupletDown \tuplet 3/2 { e16 b e' }  fis8 g gis } 
+  {e16\5 fis\5 g\5 a\4 b\4 g\5 b8\4   bes16\4  g\5 bes\4 bes\4 (a\4) g\5 e8\5}
+  {e8\5 e\5 e\5 e\5  \tupletDown \tuplet 3/2 { e16\5 b\4 e'\3 }  fis8\5 g\5 gis\4 } 
  }
 }
