@@ -69,7 +69,7 @@
 
 
 \score {
-%\unfoldRepeats
+\unfoldRepeats
 \new StaffGroup <<
   \new Staff \with {
    instrumentName = \markup {\column {"Guitar 1" \line {\teeny "John Jorgenson"}}}
@@ -206,9 +206,10 @@
 \markup {"Guitar 1 - section B"}
 \score {
  \new StaffGroup <<
-  \new Staff {
+     \new Staff {
    \clef "treble_8"
    \key e \minor
+   
    \BGuitarOne
   }
   \new TabStaff {
@@ -217,12 +218,17 @@
  >>
   \layout {
 %     #(layout-set-staff-size 14)
-    indent = 0\cm
+   indent = 0\cm
     \override StaffGroup.SystemStartBracket #'transparent = ##t
     \context {
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }
   }
 }
 
@@ -246,6 +252,12 @@
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }
+    
   }
 }
 
@@ -270,6 +282,11 @@
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }    
   }
 }
 
@@ -343,6 +360,11 @@
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }  
   }
 }
 
@@ -366,6 +388,11 @@
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }      
   }
 }
 
@@ -390,6 +417,11 @@
      \TabStaff
       \remove Clef_engraver
     }
+    \context {
+     \Score
+      \override StaffGrouper.staff-staff-spacing.padding = #3.5
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #0
+   }     
   }
 }
 

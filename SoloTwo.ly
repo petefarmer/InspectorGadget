@@ -3,23 +3,22 @@ SoloTwo = {
  { 
   \bendOn g'16 (a'8.) (g'4) fis'16 (gis'16) (fis'8) ~ fis'4 \bendOff
 
-  \slurDown \tuplet 3/2 { b16 (ais) (a) (} g) (a)   (g16) d dis e \afterGrace d'2 \glissando {\hideNotes b'8} \unHideNotes 
+  \slurDown \tuplet 3/2 { b16 (ais) (a) (} g) a   (g16) d \glissando dis \glissando e \afterGrace d'2 \glissando {\hideNotes b'8} \unHideNotes 
     \slurNeutral
 
-%  \grace b16 d'16 e'16 d'16 b16   d'8 a16 (ais16)  (a16) g16 \glissando fis16  a16 \glissando \autoBeamOff g8 \stemDown \bendOn ais8
   \slurDown
   \tieDown 
-  \tuplet 3/2 {b16 d'16 ~ d'}  \tuplet 3/2 {e'16 d'16 ~ d'}  \tuplet 3/2 {b16 d'16 ~ d'}  \bendOn a8 (ais16)   (a16) \bendOff \tuplet 3/2 {g16  \glissando fis16 ~ fis}  \autoBeamOff \tuplet 3/2 {a16 \glissando [g ~ g]} \stemDown \slurUp \bendOn ais8
+  \tuplet 3/2 {b'16 d''16 ~ d''}  \tuplet 3/2 {e''16 d''16 ~ d''}  \tuplet 3/2 {b'16 d''16 ~ d''}  \bendOn a'8 (ais'16)   (a'16) \bendOff \tuplet 3/2 {g'16  \glissando fis'16 ~ fis'}  \autoBeamOff \tuplet 3/2 {a'16 \glissando [g' ~ g']} \stemDown \slurUp \bendOn ais8
   (b8) 
 \tieUp
-\stemUp
+\stemDown
   b16
-      \tuplet 3/2 {d'16 [g] \stemDown b} 
+      \tuplet 3/2 {\stemUp d'16 [g] \stemDown b} 
       \tuplet 3/2 {\stemUp cis'16 [g] \stemDown b}  
       \tuplet 3/2 {\stemUp c'16 [g] \stemDown b}  
    \stemUp b16
 
-   \stemDown d4^\markup {\teeny "gradual bend behind nut"} (e8) 
+   \stemUp d4^\markup {\teeny "gradual bend behind nut"} (e8) 
    \stemNeutral \autoBeamOn
  }
  \\

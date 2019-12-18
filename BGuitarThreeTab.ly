@@ -1,5 +1,5 @@
 BGuitarThreeTab = {
- a8 \hideNotes \grace ais ^\markup { \teeny "glissandi with l.h. Stealth slide" } \glissando \unHideNotes cis' e'  \hideNotes  \grace cis' \glissando \unHideNotes e'  g' \hideNotes  \grace e' \glissando \unHideNotes g'  ais' \hideNotes  \grace g' \glissando \unHideNotes ais' 
+ a8 \hideNotes \grace ais ^\markup { \teeny "glissandi with l.h. Stealth slide" } \glissando \unHideNotes cis'\3 e'\2  \hideNotes  \grace cis'\3 \glissando \unHideNotes e'\3  g'\2 \hideNotes  \grace e'\3 \glissando \unHideNotes g'\3  ais'\2 \hideNotes  \grace g' \glissando \unHideNotes ais' 
 
  d''4  e''16 d'' c''  a''8 g'' f'' g''16 f''8
 

@@ -13,5 +13,5 @@ BGuitarThree = {
       
  cis' e' gis'16 e' cis' cis''8 gis'16 fis' e' cis'4
       
- e'8 g' c'' \slurUp \bendOn \bendGrace dis'' (e''8) (dis''2) \bendOff \slurNeutral
+ e'8 g' c'' \slurUp \bendOn \bendGrace dis'' ( e''8) (dis''2) \bendOff \slurNeutral
 }

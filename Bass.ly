@@ -61,7 +61,8 @@ Bass = {
  }
  \alternative {
   { 
-   e, g b b ais16 g ais ais a g e8
+   % e, g b b ais16 g ais ais a g e8
+   e16 dis e r16 r2.
   }
   {
 %   e8 fis g b c g c e

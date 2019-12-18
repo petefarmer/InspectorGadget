@@ -67,7 +67,7 @@ PianoUpper = \relative c {
  }
  \alternative {
   { 
- r4 <e' a>8 r <e bes'>8. <e b'> r8
+ <d e g>4 <e' a>8 r <e bes'>8. <e b'> r8
   }
   {
  <d, e g>4 <d e g>8. <c e g>16 ~ <c e g>8 r8
@@ -154,7 +154,7 @@ PianoLower = \relative c {
  }
  \alternative {
   { 
-  r1
+  <e b'>4 r2.
   }
   {
  <e b'>4 <e b'>8. <c  bes'>16 ~ <c bes'>8 r8
